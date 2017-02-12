@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	padding: 50px 60px 40px 50px;
+}
+
+footer {
+	text-align: center;
+	margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.container {
+	width: 50%;
+	border-width: 5px;
+	border-color: #cccc00;
+	border-style: dotted;
+}
+
+.imageColumn {
+	float: left;
+}
+
+.playColumn {
+	float: right;
+	border-width: 5px;
+	border-color: #cccc00;
+	border-style: none none none dotted;
+}
+
+#the-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#the-word li {
+  position: relative;
+  list-style: inline;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}

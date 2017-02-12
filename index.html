@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Jesse Thomas's Hangman game</title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+<body>
+
+	<header>
+
+		<!-- Specialized heading I made using an online generator! -->
+		<a><img src="http://fontmeme.com/permalink/170207/177491ff757ea4fdf00042bebf3acad5.png" style="width:100%"; border="0" alt="pokemon-hangman"></a>
+
+	</header>
+
+	<div class="container">
+
+		<div class="row">
+		
+			<div class="col-md-6 offset-md-3">
+
+				<div class="row">
+
+					<div class="col-md-4 imageColumn">
+
+						<!-- Images, responsive and interchangable -->
+						<br><div id="imagePlace"></div>
+
+					</div>
+					<div class="col-md-8 playColumn">
+						
+						<br>
+						<p>Press any key to get started!</p><br>
+						<p id="displayWins"></p><br>
+						<p id="displayWord"></p><br><br>
+						<p id="guessesLeft"></p><br><br>
+						<p id="guessedList"></p><br>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<footer>
+		<h5> &copy; Copyright 2017 Jesse Thomas </h5>
+	</footer>
+
+	<!--
+	<script type="text/javascript">
+	
+	Dont know if this is needed yet
+	var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]; 
+
+	var gym = ["g","y","m"];
+	var gymWord = "gym";
+	var wordWords = [gymWord];
+	var badge = ["b","a","d","g","e"];
+	var squirtle = ["s","q","u","i","r","t","l","e"];
+	var words = {gym:"gym",badge:"badge",squirtle:"squirtle"};
+	var userWord = [];
+	var guessedLetters = [];
+	var userWins;
+	var guessesLeft;
+
+	Generating random words 
+	var randomWord = words[Math.floor(Math.random()*words.length)];
+
+	userWins = document.getElementById("wins");
+
+	document.onkeyup = function(event) {
+
+		var userGuess = event.key;
+
+		for (var i=0;i<randomWord.length;i++) {
+
+			if (userGuess == randomWord[i]) {
+				userWord += randomWord[i];
+				console.log(userWord);
+				if (userWord == words) {
+					alert("You have won!");
+				}
+			}
+			if (userGuess != randomWord[i]) {
+				userGuess += userGuessedLetters;
+				userGuessesLeft-;
+			}
+
+		$("#userGuessedLetters").
+		}
+	}
+
+	</script>
+	-->
+
+
+</body>
+</html>
